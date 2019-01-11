@@ -1,0 +1,10 @@
+﻿definiendo las variables
+
+xid = Puntaje maximo		pmax
+porexig = Exigencia		exig
+nmaxap = Nota maxima		nmax
+nminap = Nota aprobacion	napr
+xalum = Puntaje alumno		palu
+xexig = Puntaje para el 4	
+decimexig = decimales puntaje
+decimnota = decimales nota
