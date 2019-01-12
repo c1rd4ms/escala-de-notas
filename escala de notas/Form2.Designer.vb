@@ -23,41 +23,42 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.p = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.pmax = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.ex = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.nota = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(481, 388)
+        Me.Button1.Location = New System.Drawing.Point(481, 347)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(113, 40)
-        Me.Button1.TabIndex = 3
+        Me.Button1.TabIndex = 9
         Me.Button1.Text = "Salir"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'p
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(443, 168)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 30)
-        Me.TextBox1.TabIndex = 4
+        Me.p.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.p.Location = New System.Drawing.Point(443, 168)
+        Me.p.Name = "p"
+        Me.p.Size = New System.Drawing.Size(151, 30)
+        Me.p.TabIndex = 5
+        Me.p.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label1
         '
@@ -79,13 +80,14 @@ Partial Class Form2
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Puntaje Maximo"
         '
-        'TextBox4
+        'pmax
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(443, 132)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(151, 30)
-        Me.TextBox4.TabIndex = 13
+        Me.pmax.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pmax.Location = New System.Drawing.Point(443, 132)
+        Me.pmax.Name = "pmax"
+        Me.pmax.Size = New System.Drawing.Size(151, 30)
+        Me.pmax.TabIndex = 4
+        Me.pmax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label5
         '
@@ -97,13 +99,14 @@ Partial Class Form2
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Exigencia"
         '
-        'TextBox5
+        'ex
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(443, 96)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(151, 30)
-        Me.TextBox5.TabIndex = 15
+        Me.ex.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ex.Location = New System.Drawing.Point(443, 96)
+        Me.ex.Name = "ex"
+        Me.ex.Size = New System.Drawing.Size(151, 30)
+        Me.ex.TabIndex = 3
+        Me.ex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
         '
@@ -115,14 +118,16 @@ Partial Class Form2
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Nota"
         '
-        'TextBox2
+        'nota
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(443, 204)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(151, 30)
-        Me.TextBox2.TabIndex = 17
+        Me.nota.Enabled = False
+        Me.nota.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nota.Location = New System.Drawing.Point(443, 204)
+        Me.nota.MaxLength = 3
+        Me.nota.Name = "nota"
+        Me.nota.ReadOnly = True
+        Me.nota.Size = New System.Drawing.Size(151, 30)
+        Me.nota.TabIndex = 10
         '
         'Label3
         '
@@ -134,16 +139,17 @@ Partial Class Form2
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Nota Maxima"
         '
-        'TextBox3
+        'TextBox2
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(443, 60)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(151, 30)
-        Me.TextBox3.TabIndex = 19
-        Me.TextBox3.Text = "7.0"
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TextBox2.Enabled = False
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(443, 60)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
+        Me.TextBox2.Size = New System.Drawing.Size(151, 30)
+        Me.TextBox2.TabIndex = 2
+        Me.TextBox2.Text = "7.0"
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label6
         '
@@ -155,45 +161,35 @@ Partial Class Form2
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "Nota Minima"
         '
-        'TextBox6
+        'TextBox1
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(443, 24)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(151, 30)
-        Me.TextBox6.TabIndex = 21
-        Me.TextBox6.Text = "1.0"
-        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(443, 24)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(151, 30)
+        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.Text = "1.0"
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(290, 264)
+        Me.Button2.Location = New System.Drawing.Point(323, 289)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 40)
-        Me.Button2.TabIndex = 23
-        Me.Button2.Text = "Borrar"
+        Me.Button2.Size = New System.Drawing.Size(73, 24)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Borrar todo"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(481, 264)
+        Me.Button3.Location = New System.Drawing.Point(481, 281)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(113, 40)
-        Me.Button3.TabIndex = 24
+        Me.Button3.TabIndex = 6
         Me.Button3.Text = "Calcular"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(309, 334)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(262, 13)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Mensaje de error - Mensaje de error - Mensaje de error"
         '
         'PictureBox1
         '
@@ -204,27 +200,36 @@ Partial Class Form2
         Me.PictureBox1.TabIndex = 27
         Me.PictureBox1.TabStop = False
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(402, 289)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(73, 24)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "Borrar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(647, 450)
+        Me.ClientSize = New System.Drawing.Size(647, 397)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.nota)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.ex)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.pmax)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.p)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -236,20 +241,20 @@ Partial Class Form2
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents p As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents pmax As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents ex As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents nota As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button4 As Button
 End Class
