@@ -1,72 +1,38 @@
 ﻿Public Class Form2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'boton salir'
         End
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ex.KeyPress
-
-    End Sub
-
-    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles p.KeyPress
-
-
-
-    End Sub
-
-    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nota.KeyPress
-
-    End Sub
-
-    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
-
-    End Sub
-
-    Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles pmax.KeyPress
-
-    End Sub
-
-    Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
-
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'boton limpia todos los campos'
         ex.Clear()
         pmax.Clear()
         p.Clear()
         nota.Clear()
-
-
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
+        'boton limpia solo campo puntaje alumno'
         p.Clear()
-
-    End Sub
-
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-
     End Sub
 
     Private Sub operacion()
+        'formula 1'
 
         nota.Text = 3 * Val(p.Text) / (Val(ex.Text) * Val(pmax.Text)) + 1
 
 
-
     End Sub
     Private Sub operacion2()
-
+        'formula 2'
         nota.Text = 3 * (Val(p.Text) - Val(ex.Text) * Val(pmax.Text)) / (Val(pmax.Text) * (1 - Val(ex.Text))) + 4
 
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        'decide que operacion hacer en relacion si exigencia x puntaje max es menor o mayor de el puntaje del alumno'
+
         Dim sexo As Double
         sexo = Val(ex.Text) * Val(pmax.Text)
 
@@ -79,7 +45,5 @@
 
     End Sub
 
-    Private Sub nota_TextChanged(sender As Object, e As EventArgs) Handles nota.TextChanged
 
-    End Sub
 End Class

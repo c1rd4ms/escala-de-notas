@@ -22,6 +22,7 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -42,7 +43,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(385, 168)
+        Me.Label1.Location = New System.Drawing.Point(385, 134)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(265, 39)
         Me.Label1.TabIndex = 1
@@ -51,7 +52,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(392, 277)
+        Me.Button1.Location = New System.Drawing.Point(392, 243)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(113, 40)
         Me.Button1.TabIndex = 2
@@ -60,7 +61,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(537, 277)
+        Me.Button2.Location = New System.Drawing.Point(537, 243)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(113, 40)
         Me.Button2.TabIndex = 3
@@ -76,6 +77,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
