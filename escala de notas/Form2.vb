@@ -45,5 +45,80 @@
 
     End Sub
 
+    Private Sub ex_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ex.KeyPress
 
+        'permite solo numeros y puntos en textbox'
+
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If InStr("0123456789.", Chr(keyascii)) = 0 Then
+            If keyascii <> 8 Then
+                keyascii = 0
+            End If
+            e.KeyChar = Chr(keyascii)
+            If keyascii = 0 Then
+                e.Handled = True
+                MsgBox("ingresa un numero valido")
+            End If
+        End If
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        ex.Focus()
+
+    End Sub
+
+    Private Sub pmax_KeyPress(sender As Object, e As KeyPressEventArgs) Handles pmax.KeyPress
+
+        'permite solo numeros y puntos en textbox'
+
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If InStr("0123456789.", Chr(keyascii)) = 0 Then
+            If keyascii <> 8 Then
+                keyascii = 0
+            End If
+            e.KeyChar = Chr(keyascii)
+            If keyascii = 0 Then
+                e.Handled = True
+                MsgBox("ingresa un numero valido")
+            End If
+        End If
+
+
+
+
+    End Sub
+
+    Private Sub p_KeyPress(sender As Object, e As KeyPressEventArgs) Handles p.KeyPress
+
+        'permite solo numeros y puntos en textbox'
+
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If InStr("0123456789.", Chr(keyascii)) = 0 Then
+            If keyascii <> 8 Then
+                keyascii = 0
+            End If
+            e.KeyChar = Chr(keyascii)
+            If keyascii = 0 Then
+                e.Handled = True
+                MsgBox("ingresa un numero valido")
+            End If
+        End If
+    End Sub
+
+    Private Sub nota_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nota.KeyPress
+
+        'permite solo numeros y puntos en textbox'
+
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If InStr("0123456789.", Chr(keyascii)) = 0 Then
+            If keyascii <> 8 Then
+                keyascii = 0
+            End If
+            e.KeyChar = Chr(keyascii)
+            If keyascii = 0 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

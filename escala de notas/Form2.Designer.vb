@@ -102,6 +102,7 @@ Partial Class Form2
         Me.ex.Name = "ex"
         Me.ex.Size = New System.Drawing.Size(151, 30)
         Me.ex.TabIndex = 3
+        Me.ex.Text = "0.6"
         Me.ex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
@@ -155,6 +156,7 @@ Partial Class Form2
         '
         'Form2
         '
+        Me.AcceptButton = Me.Button3
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(647, 397)
@@ -170,7 +172,9 @@ Partial Class Form2
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.p)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Escala de Notas"
