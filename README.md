@@ -1,16 +1,9 @@
 # escala-de-notas
 Escala de notas vb
 
-Instrucciones de uso:
+Hemos trabajado en crear esta version de escritorio de la escala de notas web (https://escuela.cerroparra.cl/notas/), para el uso de todos quienes asi lo necesiten, de manera gratuita.
 
-* Las formulas matematicas son las siguientes:
+Puede ser descargada, modificada o personalizada a gusto bajo la licencia mit.
 
-nota = (nap-nmi) x pa/(exi x pma)+nmi
-
-nota = (nma-nap) x (pa-ex x pma)/(pma x (nmi-ex)+nap
-
-Se da por echo que la nota minima es 1 la de aprobacion es 4 y la maxima es 7.
-La exigencia se debe ingresar dividida por 100 (ej. exigencia 60 = 0.6).
-
-Esta es la version alfa muy temprana y sufrira cambios en lo inmediato.
+Para concultas puede hacerlo a info@cerroparra.cl.
 
